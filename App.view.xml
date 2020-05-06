@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="Quickstart.App"
+	controllerName="Calculator.App"
 	displayBlock="true"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
@@ -7,34 +7,40 @@
 	xmlns:tnt="sap.tnt"
 	xmlns="sap.m">
 	<App id="app">
-		<Page title="Create Enterprise-ready Web Apps with Ease">
-			<l:BlockLayout background="Light">
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<core:Icon color="#1873B4" src="sap-icon://sap-ui5" size="5rem" class="sapUiSmallMarginBottom" width="100%"/>
-						<Title level="H1" titleStyle="H1" text="This is UI5!" width="100%" textAlign="Center"/>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<FlexBox items="{/features}" justifyContent="Center" wrap="Wrap" class="sapUiSmallMarginBottom">
-							<tnt:InfoLabel text="{}" class="sapUiSmallMarginTop sapUiSmallMarginEnd"/>
-						</FlexBox>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
+		<Page title="Ticket Calculator">
+            <l:BlockLayout background="Light">
+                <l:BlockLayoutRow>
+                    <l:BlockLayoutCell>
+                    <Label text="Importe" labelFor="inputNumber1"/>
+                    <Input
+                        id="Importe"
+                        type="Number"
+                        class="sapUiSmallMarginBottom"
+                        placeholder="Enter value" />          
+                    <Label text="Ticket1" labelFor="inputNumber1"/>
+                    <Input
+                        id="Ticket1"
+                        type="Number"
+                        class="sapUiSmallMarginBottom"
+                        placeholder="Enter a ticket value" />
 
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell>
-						<Panel headerText="Are you ready?" expandable="true">
-							<Switch change=".onChange" customTextOn="yes" customTextOff="no"/>
-							<l:HorizontalLayout id="ready" visible="false" class="sapUiSmallMargin">
-								<Text text="Ok, let's get you started!" class="sapUiTinyMarginEnd"/>
-								<Link text="Learn more" href="https://openui5.hana.ondemand.com/"/>
-							</l:HorizontalLayout>
-						</Panel>
-					</l:BlockLayoutCell>
+                    <Label text="Ticket2" labelFor="inputNumber2"/>
+                    <Input
+                        id="Ticket2"
+                        type="Number"
+                        class="sapUiSmallMarginBottom"
+                        placeholder="Enter a ticket value" />            
+                    <Button
+                        id="Calculate"
+                        type="Emphasized"
+                        icon="sap-icon://simulate"
+                        text="Calculate"
+                        press="onCalculate"
+                        class="sapUiSmallMargin"/>
+                    </l:BlockLayoutCell>
 				</l:BlockLayoutRow>
-			</l:BlockLayout>
+		    </l:BlockLayout>
+			
 		</Page>
 	</App>
 </mvc:View>
