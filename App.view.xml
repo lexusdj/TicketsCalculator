@@ -17,14 +17,14 @@
                         type="Number"
                         class="sapUiSmallMarginBottom"
                         placeholder="Enter value" />          
-                    <Label text="Ticket1" labelFor="inputNumber1"/>
+                    <Label text="Valor Ticket" labelFor="inputNumber1"/>
                     <Input
                         id="Ticket1"
                         type="Number"
                         class="sapUiSmallMarginBottom"
                         placeholder="Enter a ticket value" />
 
-                    <Label text="Ticket2" labelFor="inputNumber2"/>
+                    <Label text="Valor Ticket" labelFor="inputNumber2"/>
                     <Input
                         id="Ticket2"
                         type="Number"
@@ -37,6 +37,9 @@
                         text="Calculate"
                         press="onCalculate"
                         class="sapUiSmallMargin"/>
+                    <l:VerticalLayout class="sapUiContentPadding" width="100%"> 
+                    <Text id="Textticket" text="" class="sapUiTinyMarginTop"/>
+                    </l:VerticalLayout>
                     </l:BlockLayoutCell>
 				</l:BlockLayoutRow>
 		    </l:BlockLayout>
