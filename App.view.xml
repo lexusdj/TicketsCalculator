@@ -14,27 +14,33 @@
                     <Label text="Importe" labelFor="inputNumber1"/>
                     <Input
                         id="Importe"
-                        type="Number"
+                        type="String"
+                        description="€"
                         class="sapUiSmallMarginBottom"
-                        placeholder="Enter value" />          
+                        placeholder="Enter value"
+                        maxLength="3"/>          
                     <Label text="Valor Ticket" labelFor="inputNumber1"/>
                     <Input
                         id="Ticket1"
-                        type="Number"
+                        type="String"
+                        description="€"
+                        maxLength="1"
                         class="sapUiSmallMarginBottom"
                         placeholder="Enter a ticket value" />
 
                     <Label text="Valor Ticket" labelFor="inputNumber2"/>
                     <Input
                         id="Ticket2"
-                        type="Number"
+                        type="String"
+                         maxLength="1"
+                        description="€"
                         class="sapUiSmallMarginBottom"
                         placeholder="Enter a ticket value" />            
                     <Button
                         id="Calculate"
                         type="Emphasized"
                         icon="sap-icon://simulate"
-                        text="Calculate"
+                        text="Calculate €"                        
                         press="onCalculate"
                         class="sapUiSmallMargin"/>
                     <l:VerticalLayout class="sapUiContentPadding" width="100%"> 
