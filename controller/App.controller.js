@@ -6,7 +6,7 @@ sap.ui.define(
 	],
 	function(Controller, JSONModel, MessageToast) {
 		'use strict';
-		return Controller.extend('Calculator.App', {
+		return Controller.extend('Calculator.controller.App', {
 			onInit: function() {
 				//this.byId("Importe").setValue(100);
 				this.byId('Ticket1').setValue(5);
