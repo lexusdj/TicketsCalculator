@@ -14,7 +14,7 @@
                     <Label text="Importe" labelFor="inputNumber1"/>
                     <Input
                         id="Importe"
-                        type="String"
+                        
                         description="€"
                         class="sapUiSmallMarginBottom"
                         placeholder="Enter value"
@@ -22,7 +22,7 @@
                     <Label text="Valor Ticket" labelFor="inputNumber1"/>
                     <Input
                         id="Ticket1"
-                        type="String"
+                  
                         description="€"
                         maxLength="1"
                         class="sapUiSmallMarginBottom"
@@ -31,7 +31,7 @@
                     <Label text="Valor Ticket" labelFor="inputNumber2"/>
                     <Input
                         id="Ticket2"
-                        type="String"
+                 
                          maxLength="1"
                         description="€"
                         class="sapUiSmallMarginBottom"
