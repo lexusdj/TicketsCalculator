@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="Calculator.App"
+	controllerName="Calculator.controller.App"
 	displayBlock="true"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
