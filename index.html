@@ -11,14 +11,15 @@
 		data-sap-ui-async="true">
 	</script>
 	<script>
-	var oPage = sap.ui.view("page",
+	sap.ui.getCore().attachInit(function(){
+		var oPage = sap.ui.view("page",
 		{ type: sap.ui.core.mvc.ViewType.XML,
 			viewName: "Calculator.App",
 		});
 		
 		var oApp = new sap.m.App();
 		oApp.addPage(oPage);
-		oApp.placeAt("content");		
+		oApp.placeAt("content");	});	
 	</script>
 </head>
 <body class="sapUiBody" id="content"></body>
