@@ -22,7 +22,7 @@
                     <Label text="Valor Ticket" labelFor="inputNumber1"/>
                     <Input
                         id="Ticket1"
-                  
+                      
                         description="€"
                         maxLength="1"
                         class="sapUiSmallMarginBottom"
@@ -31,7 +31,7 @@
                     <Label text="Valor Ticket" labelFor="inputNumber2"/>
                     <Input
                         id="Ticket2"
-                 
+                	
                          maxLength="1"
                         description="€"
                         class="sapUiSmallMarginBottom"
