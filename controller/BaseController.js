@@ -1,10 +1,14 @@
 	sap.ui.define([
-		"sap/ui/core/mvc/Controller",
-		"sap/ui/core/routing/History"
-	], function (Controller, History) {
-	"use strict";
-	return Controller.extend("Calculator.controller.BaseController",{
-	findSolution: function (target, vtick1, vtick2) {
+		"sap/ui/core/mvc/Controller"
+		//"sap/ui/core/routing/History"
+	], function (Controller) {
+		"use strict";
+		return Controller.extend("Calculator.controller.BaseController", {
+				onInit: function () {
+					
+				},
+			
+			findSolution: function (target, vtick1, vtick2) {
 				let coin = 1; //Monedas sueltas
 				function find(current, qtick1, qtick2, coins) {
 					if (current == target) {
@@ -49,5 +53,5 @@
 				}
 				return find(0, 0, 0, 0);
 			}
+		});
 	});
-});

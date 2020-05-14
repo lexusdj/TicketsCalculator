@@ -1,7 +1,7 @@
 sap.ui.define(
 	[
 		//'sap/ui/core/mvc/Controller',
-		//'sap/ui/model/json/JSONModel',
+		'sap/ui/model/json/JSONModel',
 		'Calculator/controller/BaseController',
 		'sap/m/MessageToast'
 	],
@@ -10,8 +10,8 @@ sap.ui.define(
 		return BController.extend('Calculator.controller.App', {
 			onInit: function () {
 				//this.byId("Importe").setValue(100);
-				this.byId('Ticket1').setValue(5);
-				this.byId('Ticket2').setValue(3);
+				//this.byId('Ticket1').setValue(5);
+				//this.byId('Ticket2').setValue(3);
 				//this.byId("Textticket").setVisible(false);
 			},
 			onChange: function (oEvent) {

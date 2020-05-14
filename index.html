@@ -12,14 +12,31 @@
 	</script>
 	<script>
 	sap.ui.getCore().attachInit(function(){
-		var oPage = sap.ui.view("page",
+sap.ui.require([
+				"sap/m/Shell",
+				"sap/ui/core/ComponentContainer",
+				"Calculator/Component"
+			], function (Shell, ComponentContainer, Component) {
+				
+				// initialize the UI component
+				new Shell({
+					app: new ComponentContainer({
+						height : "100%",
+						component : new Component({
+							id: "MyCalculator"
+						})
+					})
+				}).placeAt("content");
+			});
+		});		
+		/*var oPage = sap.ui.view("page",
 		{ type: sap.ui.core.mvc.ViewType.XML,
 			viewName: "Calculator.view.App",
 		});
 		
 		var oApp = new sap.m.App();
 		oApp.addPage(oPage);
-		oApp.placeAt("content");	});	
+		oApp.placeAt("content");	});*/	
 	</script>
 </head>
 <body class="sapUiBody" id="content"></body>
