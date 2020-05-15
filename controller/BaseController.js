@@ -8,10 +8,20 @@
 					
 				},
 			
+			/**
+		 * Convenience method for getting the view model by name.
+		 * @public
+		 * @param {string} [sName] the model name
+		 * @returns {sap.ui.model.Model} the model instance
+		 */
+		getModel : function (sName) {
+			return this.getView().getModel(sName);
+		},
+		
 			findSolution: function (target, vtick1, vtick2) {
 				let coin = 1; //Monedas sueltas
 				function find(current, qtick1, qtick2, coins) {
-					if (current == target) {
+					if (current === target) {
 						return (
 							`Tickets de ${vtick1}€ :` +
 							`${qtick1}, de ${vtick2}€ :` +
@@ -34,7 +44,7 @@
 			findSolution2: function (target, vtick1, vtick2) {
 				let coin = 1; //Monedas sueltas
 				function find(current, qtick1, qtick2, coins) {
-					if (current == target) {
+					if (current === target) {
 						return `Tickets de ${vtick1}€ :` + `${qtick1}, de ${vtick2}€ :` + qtick2 + `. Suelto ${coins}€`;
 					} else if (current > target) {
 						return null;
